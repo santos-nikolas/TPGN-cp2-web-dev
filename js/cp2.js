@@ -63,18 +63,42 @@ function reverseDivs() {
 }
 
 
+// var darkModeToggle = document.getElementById('darkModeToggle');
+// darkModeToggle.addEventListener('click', toggleDarkMode);
+
+// function toggleDarkMode() {
+//   var container = document.querySelector('.container');
+  
+//   // Verifica se o modo escuro está ativado
+//   if (container.style.backgroundColor === 'rgb(221, 217, 217)') {
+//     // Modo escuro ativado, define a cor do modo escuro
+//     container.style.backgroundColor = 'black';
+//     darkModeToggle.innerText = 'Light Mode';
+//   } else {
+//     // Modo escuro desativado, remove a cor do modo escuro
+//     container.style.backgroundColor = 'rgb(221, 217, 217)';
+//     darkModeToggle.textContent = 'Dark Mode';
+//   }
+// }
+
 var darkModeToggle = document.getElementById('darkModeToggle');
+var isDarkMode = false; // Variável de controle para verificar o estado do modo escuro
+
 darkModeToggle.addEventListener('click', toggleDarkMode);
 
 function toggleDarkMode() {
   var container = document.querySelector('.container');
-  
-  // Verifica se o modo escuro está ativado
-  if (container.style.backgroundColor === 'rgb(221, 217, 217)') {
+
+  isDarkMode = !isDarkMode; // Inverte o estado do modo escuro
+
+  if (isDarkMode) {
     // Modo escuro ativado, define a cor do modo escuro
     container.style.backgroundColor = 'black';
+    darkModeToggle.innerHTML = 'Light Mode';
   } else {
-    // Modo escuro desativado, remove a cor do modo escuro
+    // Modo escuro desativado, define a cor do modo claro
     container.style.backgroundColor = 'rgb(221, 217, 217)';
+    darkModeToggle.innerHTML = 'Dark Mode';
   }
 }
+
