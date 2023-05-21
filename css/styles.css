@@ -1,20 +1,25 @@
 *{
-    margin: 0;
+    margin: 0rem;
     padding: 0;
     overflow-x: hidden;
 }
 
-.container{
+body {
     background-color: rgb(221, 217, 217);
+}
+
+.container{
     width: 100%;
     height: 100vh;
     border-radius: 0 0;
-    overflow-y: hidden;
+    display: flex;
+    flex-wrap: wrap;
+
 }    
 .imagem-div {
     background-color: #fff;
-    width: 200px;
-    height: 100px;
+    width: 210px;
+    height: 150px;
     display: inline-block;
     text-align: center;
     justify-content: center;
@@ -22,6 +27,7 @@
     border-radius: 15px;
     overflow-y: hidden;
     align-items: center;
+    margin: 1rem 0.5rem 1rem 0.5rem;
 }
 
 .imagem-div img {
