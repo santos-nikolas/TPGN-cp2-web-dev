@@ -1,110 +1,39 @@
-body{
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container{
     background-color: black;
+    width: 100%;
+    height: 100vh;
+    border-radius: 0 0;
+    overflow-y: hidden;
+}    
+.imagem-div {
+    background-color: #fff;
+    width: 200px;
+    height: 100px;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    padding: 2px;
+    border-radius: 15px;
+    overflow-y: hidden;
+    align-items: center;
 }
-div-1{
-    background-color: #fff;
-    width: 200px;
-    height: 100px;
+
+.imagem-div img {
+    width: 100%;
+    height: 17vh;
 }
-div-2{
-    background-color: #fff;
-    width: 200px;
-    height: 100px;
-}div-3{
-    background-color: #fff;
-    width: 200px;
-    height: 100px;
-}div-4{
-    background-color: #fff;
-    width: 200px;
-    height: 100px;
-}div-5{
-    background-color: #fff;
-    width: 200px;
-    height: 100px;
-}div-6{
-    background-color: #fff;
-    width: 200px;
-    height: 100px;
-}div-7{
-    background-color: #fff;
-    width: 200px;
-    height: 100px;
-}div-8{
-    background-color: #fff;
-    width: 200px;
-    height: 100px;
-}div-9{
-    background-color: #fff;
-    width: 200px;
-    height: 100px;
-}div-10{
-    background-color: #fff;
-    width: 200px;
-    height: 100px;
-}div-11{
-    background-color: #fff;
-    width: 200px;
-    height: 100px;
-}div-12{
-    background-color: #fff;
-    width: 200px;
-    height: 100px;
-}div-13{
-    background-color: #fff;
-    width: 200px;
-    height: 100px;
-}div-14{
-    background-color: #fff;
-    width: 200px;
-    height: 100px;
-}div-15{
-    background-color: #fff;
-    width: 200px;
-    height: 100px;
-}div-16{
-    background-color: #fff;
-    width: 200px;
-    height: 100px;
-}div-17{
-    background-color: #fff;
-    width: 200px;
-    height: 100px;
-}div-18{
-    background-color: #fff;
-    width: 200px;
-    height: 100px;
-}div-19{
-    background-color: #fff;
-    width: 200px;
-    height: 100px;
-}
-div-20{
-    background-color: #fff;
-    width: 200px;
-    height: 100px;
-}div-21{
-    background-color: #fff;
-    width: 200px;
-    height: 100px;
-}div-22{
-    background-color: #fff;
-    width: 200px;
-    height: 100px;
-}div-23{
-    background-color: #fff;
-    width: 200px;
-    height: 100px;
-}
-div-24{
-    background-color: #fff;
-    width: 200px;
-    height: 100px;
-}div-25{
-    background-color: #fff;
-    width: 200px;
-    height: 100px;
-}
-img[alt='toy1']{
-    width: 100px;
+
+.imagem-texto {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    bottom: 70%;
+    font-size: 2em;
 }
