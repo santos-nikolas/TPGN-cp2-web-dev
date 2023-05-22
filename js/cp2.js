@@ -76,9 +76,11 @@ function mudarTema() {
   if (darkMode) {
     // Modo escuro ativado, define a cor do modo escuro
     container.style.backgroundColor = 'black';
+    container.style.color = 'white'
   } else {
     // Modo escuro desativado, define a cor do modo claro
     container.style.backgroundColor = 'rgb(221, 217, 217)';
+    container.style.color = 'black'
   }
 // Alterna entre modo escuro e modo claro qusndo botao do tema é pressionado
   var botaoTema = document.getElementById("darkModeToggle");
