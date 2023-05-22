@@ -42,6 +42,7 @@ function inverterDivs() {
 
   var divArray = Array.from(divs);
 
+
   // Inverte a ordem dos elementos na matriz
   divArray.reverse();
 
@@ -57,6 +58,7 @@ function inverterDivs() {
       div.getElementsByClassName('imagem-texto')[0].textContent = 'Div-' + (index + 1);
     }
   });
+  
 
   // Inverte o valor da variável de controle
   mudarOrdem = !mudarOrdem;
@@ -78,7 +80,7 @@ function mudarTema() {
     // Modo escuro desativado, define a cor do modo claro
     container.style.backgroundColor = 'rgb(221, 217, 217)';
   }
-
+// Alterna entre modo escuro e modo claro qusndo botao do tema é pressionado
   var botaoTema = document.getElementById("darkModeToggle");
   if (botaoTema.innerHTML === "Dark Mode") {
     botaoTema.innerHTML = "Light Mode";
